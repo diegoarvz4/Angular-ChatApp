@@ -1,0 +1,13 @@
+<form class="chat-form " (submit)="onSendMsg(msgForm)" #msgForm="ngForm">
+  <input 
+    type="text"
+    name="content"
+    ngModel
+    required
+  >
+  <button
+    type="submit"
+  >
+    Send
+  </button>
+</form>

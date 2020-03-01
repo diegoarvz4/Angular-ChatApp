@@ -1,0 +1,73 @@
+$chat-max-width: 600px
+$chat-min-width: 300px
+$chat-min-height: 500px
+$chat-messages-color: #F1FAEE
+$chat-button-color: #457B9D
+$chat-text-color: #1D3557
+
+.title 
+  text-align: center
+
+.chat 
+  max-width: $chat-max-width
+  min-width: $chat-min-width
+  min-height: $chat-min-height
+  padding: 5px
+  margin: 0 auto
+  justify-content: center
+  position: relative
+  &-messages
+    box-sizing: border-box
+    width: 100%
+    min-height: 500px
+    max-height: 500px
+    background-color: $chat-messages-color
+    overflow: scroll
+    position: relative
+    overflow-x: hidden
+    color: $chat-text-color
+    &::-webkit-scrollbar 
+      width: 10px
+    &::-webkit-scrollbar-track 
+      background: #f1f1f1
+    &::-webkit-scrollbar-thumb 
+      background: #888 
+    &::-webkit-scrollbar-thumb:hover 
+      background: #555
+
+    
+
+  &-message
+    font-size: 20px
+    box-sizing: border-box
+    min-width: 100%
+    padding: 15px
+    align-items: center
+    position: relative
+    bottom: 0
+    animation: 0.2s ease 0s showUp
+    &-content
+      box-sizing: border-box
+      padding: 0px 15px 6px 18px
+      min-width: 50%
+      border: 1px solid darkgray
+      border-radius: 5px
+
+.putLeft
+  display: flex
+  justify-content: flex-start
+  text-alig: left
+
+.putRight
+  display: flex
+  justify-content: flex-end
+  text-align: right
+
+@keyframes showUp
+  0% 
+    opacity: 0
+    transform: translateY(10px)
+  100%
+    opacity: 1
+    transform: translateY(0px)
+

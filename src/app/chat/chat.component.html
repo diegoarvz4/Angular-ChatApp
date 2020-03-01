@@ -1,0 +1,19 @@
+<h1 class="title">CHAT APP</h1>
+<h2>Users connected: {{ numOfUsers }}</h2>
+<div class="chat" >
+  <div id="chat-messages" #ScrollDown class="chat-messages">
+    <div  *ngFor="let message of messages"  
+      class="chat-message"     
+      [ngClass]="{putRight: message.clientID === clientID, putLeft: message.clientID !== clientID}">
+      <div class="chat-message-content">
+        <h5>{{ message.clientID }}:</h5>
+        <p>
+          {{ message.content }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <app-create-message ></app-create-message>
+</div>
+
+

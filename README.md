@@ -1,27 +1,61 @@
 # ChatApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.25.
+> This is chat app that lets you connect with multiple users. 
 
-## Development server
+## Built With
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular 8
+- Observables and Services
+- Socket.IO
+- Express
+- Node JS
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisites
+  Angular
+  Npm
+  A web Browser. 
 
-## Build
+## Setup
+  Clone or download this Repository.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Install
+   `$ npm install`
 
-## Running unit tests
+## Run the API Server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  `$ npm run start:server`, to listen in `https://localhost:3000`
 
-## Running end-to-end tests
+## Run the client
+  `$ npm start`, and open your broweser in `https://localhost:4200`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Future Features
 
-## Further help
+- Name selection
+- Unit Testing with JEST
+- dgoss 
+- MongoDB
+- Docker
+- Web Push Notifications
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Authors
+
+## 👤 **Diego Luis Arvizu Gutiérrez**
+
+- Github: [@diegoarvz4](https://github.com/diegoarvz4)
+- Twitter: [@Diego Arvz](https://twitter.com/Darvizu_gutier)
+- Linkedin: [/in/diego-arvz](https://linkedin.com/linkedinhandle)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is Licensed under MIT
